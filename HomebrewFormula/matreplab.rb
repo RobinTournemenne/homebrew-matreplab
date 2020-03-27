@@ -1,5 +1,4 @@
 class Matreplab < Formula
-  include Language::Python::Virtualenv
 
   desc "an improved matlab -nodesktop"
   homepage "https://github.com/RobinTournemenne/matREPLab"
