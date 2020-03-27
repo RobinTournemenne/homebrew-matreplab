@@ -1,4 +1,4 @@
-class matreplab < Formula
+class Matreplab < Formula
   include Language::Python::Virtualenv
 
   desc "an improved matlab -nodesktop"
