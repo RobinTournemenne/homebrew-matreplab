@@ -41,7 +41,7 @@ class Matreplab < Formula
   def install
     # Create a virtualenv in `libexec`. If your app needs Python 3, make sure that
     # `depends_on "python"` is declared, and use `virtualenv_create(libexec, "python3")`.
-    venv = virtualenv_create(libexec)
+    venv = virtualenv_create(libexec, "python3")
     # Install all of the resources declared on the formula into the virtualenv.
     venv.pip_install resources
     # `pip_install_and_link` takes a look at the virtualenv's bin directory
