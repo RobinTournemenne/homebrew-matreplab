@@ -4,6 +4,7 @@ class Matreplab < Formula
   desc "an improved matlab -nodesktop"
   homepage "https://github.com/RobinTournemenne/matREPLab"
   url "https://github.com/RobinTournemenne/homebrew-matreplab/archive/homebrew.zip"
+  version "0.1"
 
   resource "pexpect" do
     url "https://files.pythonhosted.org/packages/e5/9b/ff402e0e930e70467a7178abb7c128709a30dfb22d8777c043e501bc1b10/pexpect-4.8.0.tar.gz"
