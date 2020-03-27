@@ -1,6 +1,6 @@
 __description__ = 'A better matlab -nodesktop'
 __url__ = 'https://pypi.org/project/matreplab/'
-__version__ = "0.1"
+__version__ = "0.4"
 __license__ = "MIT License"
 __status__ = "Dev"
 __author__ = "Robin Tournemenne"
