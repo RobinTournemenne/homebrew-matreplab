@@ -1,0 +1,11 @@
+__description__ = 'A better matlab -nodesktop'
+__url__ = 'https://pypi.org/project/matreplab/'
+__version__ = "0.1"
+__license__ = "MIT License"
+__status__ = "Dev"
+__author__ = "Robin Tournemenne"
+__credits__ = ["Robin Tournemenne"]
+__maintainer__ = "Robin Tournemenne"
+__author_email__ = 'rtournem@lavabit.com'
+__email__ = "rtournem@lavabit.com"
+__copyright__ = 'Copyright 2020 Robin Tournemenne'

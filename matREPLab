@@ -52,13 +52,6 @@ from prompt_toolkit.completion import Completer, Completion
 
 import pexpect
 
-__author__ = "Robin Tournemenne"
-__credits__ = ["Robin Tournemenne"]
-__license__ = "MIT License"
-__maintainer__ = "Robin Tournemenne"
-__email__ = "rtournem@lavabit.com"
-__status__ = "Dev"
-
 try:
   print_formatted_text('\r\n')
   new_line = '\r\n'
