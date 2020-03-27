@@ -1,6 +1,8 @@
-class matREPLab < Formula
+class matreplab < Formula
   include Language::Python::Virtualenv
 
+  desc "an improved matlab -nodesktop"
+  homepage "https://github.com/RobinTournemenne/matREPLab"
   url "https://github.com/RobinTournemenne/homebrew-matreplab/archive/homebrew.zip"
 
   resource "pexpect" do
