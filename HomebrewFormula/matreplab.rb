@@ -5,7 +5,7 @@ class Matreplab < Formula
   homepage "https://github.com/RobinTournemenne/matREPLab"
   url "https://github.com/RobinTournemenne/homebrew-matreplab/raw/homebrew/dist/matreplab-0.5.tar.gz"
   sha256 "cd5d5be8158e0119363c91a8a3f10ae6caa966b8fa39a632ab9d8854a1541029"
-  version "0.5"
+  version "0.5b"
 
   depends_on "python"
 
