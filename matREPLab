@@ -80,7 +80,6 @@ def setSettings(settings2parse):
   else:
     raise ValueError("input to setSettings unreadable: shoud be a list (can be empty) or 'default'")
 
-  print(settings2parse)
   for setting in settings2parse:
     if setting.find('-settings_filename') != -1:
       idx = setting.find('=')
