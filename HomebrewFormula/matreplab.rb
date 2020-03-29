@@ -9,11 +9,6 @@ class Matreplab < Formula
 
   depends_on "python"
 
-  resource "matreplab" do
-    url "https://files.pythonhosted.org/packages/7f/0b/18dc286a105a830205a40653c0b06550023665e8a6dffe415e1102bb014a/matreplab-0.4.tar.gz"
-    sha256 "e9f4cd3fa75679e7ae0abecd020043543647c18f1aa6f054f860ff55efe5ca2a"
-  end
-
   resource "pathlib" do
     url "https://files.pythonhosted.org/packages/ac/aa/9b065a76b9af472437a0059f77e8f962fe350438b927cb80184c32f075eb/pathlib-1.0.1.tar.gz"
     sha256 "6940718dfc3eff4258203ad5021090933e5c04707d5ca8cc9e73c94a7894ea9f"
@@ -44,17 +39,20 @@ class Matreplab < Formula
     sha256 "ee73862862a156bf77ff92b09034fc4825dd3af9cf81bc5b360668d425f3c5f1"
   end
 
+  # def install
+  #   # Create a virtualenv in `libexec`. If your app needs Python 3, make sure that
+  #   # `depends_on "python"` is declared, and use `virtualenv_create(libexec, "python3")`.
+  #   venv = virtualenv_create(libexec, "python3")
+  #   # Install all of the resources declared on the formula into the virtualenv.
+  #   venv.pip_install resources
+  #   # `pip_install_and_link` takes a look at the virtualenv's bin directory
+  #   # before and after installing its argument. New scripts will be symlinked
+  #   # into `bin`. `pip_install_and_link buildpath` will install the package
+  #   # that the formula points to, because buildpath is the location where the
+  #   # formula's tarball was unpacked.
+  #   venv.pip_install_and_link buildpath
+  # end
   def install
-    # Create a virtualenv in `libexec`. If your app needs Python 3, make sure that
-    # `depends_on "python"` is declared, and use `virtualenv_create(libexec, "python3")`.
-    venv = virtualenv_create(libexec, "python3")
-    # Install all of the resources declared on the formula into the virtualenv.
-    venv.pip_install resources
-    # `pip_install_and_link` takes a look at the virtualenv's bin directory
-    # before and after installing its argument. New scripts will be symlinked
-    # into `bin`. `pip_install_and_link buildpath` will install the package
-    # that the formula points to, because buildpath is the location where the
-    # formula's tarball was unpacked.
-    venv.pip_install_and_link buildpath
+    virtualenv_install_with_resources
   end
 end
