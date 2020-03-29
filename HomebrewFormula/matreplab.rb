@@ -4,7 +4,7 @@ class Matreplab < Formula
   desc "an improved matlab -nodesktop"
   homepage "https://github.com/RobinTournemenne/matREPLab"
   url "https://github.com/RobinTournemenne/homebrew-matreplab/raw/homebrew/dist/matreplab-0.5rc0.tar.gz"
-  sha256 ""
+  sha256 "77c7acc0c525f8e7b8820bcfe117b7e50b8d3c6c791caffd33cca73d959bd086"
   version "0.6"
 
   depends_on "python"
