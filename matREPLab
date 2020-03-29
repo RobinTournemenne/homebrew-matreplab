@@ -56,8 +56,6 @@ from prompt_toolkit.completion import Completer, Completion
 
 import pexpect
 
-<<<<<<< HEAD
-=======
 def setSettings(settings2parse):
   stg = {}
   if settings2parse == 'default': # then we will get the dault values
@@ -135,7 +133,6 @@ if "settings_filename" in settings_arguments.keys():
 settings.update(settings_arguments) # modified by argv
 style = style_from_pygments_cls(get_style_by_name(settings["theme"]))
 
->>>>>>> b5cabd9... settings managemetn system and documentation
 try:
   print_formatted_text('\r\n')
   new_line = '\r\n'
